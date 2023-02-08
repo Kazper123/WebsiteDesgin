@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+  <div class="content_container">
+
+    <section class="nav-container" >
+      <img src="/images/logo.svg" alt="" id="logo">
+      <button class="mobile-nav-toggle" aria-controls="primary-dropdown" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <div class="nav-link" data-visible="false">
+
+        <ul class="flex" id="primary-dropdown">
+
+          <li>
+            <a href="#" class="mobile" id="dropdown">
+              <span>Feature</span>
+              <img src="/images/icon-arrow-down.svg" alt="" id="arrow">
+
+              <ul class="dropdown_item">
+                <li>
+                  <img src="/images/icon-todo.svg" alt="">
+                  <span>Todo List</span>
+                </li>
+                <li>
+                  <img src="/images/icon-calendar.svg" alt="">
+                  <span>Calander</span>
+                </li>
+                <li>
+                  <img src="/images/icon-reminders.svg" alt="">
+                  <span>Reminders</span>
+                </li>
+                <li>
+                  <img src="/images/icon-planning.svg" alt="">
+                  <span>Planning</span>
+                </li>
+              </ul>
+
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mobile" id="dropdown">
+              <span>Company</span>
+              <img src="/images/icon-arrow-down.svg" alt="" id="arrow">
+
+              <ul class="dropdown_item2">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mobile">Careers</a>
+          </li>
+          <li>
+            <a href="#" class="mobile">About</a>
+          </li>
+        </ul>
+
+        <div class="login">
+          <button class="login_btn button" id="loginBtn">Login</button>
+          <button class="register_btn button" id="registerBtn">Register</button>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="article main_container" id="second">
+          <h1>Make <br>remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+          <button class="learn_more">Learn more</button>
+          <div class="img-container">
+            <img src="/images/client-databiz.svg" alt="">
+            <img src="/images/client-audiophile.svg" alt="">
+            <img src="/images/client-meet.svg" alt="">
+            <img src="/images/client-maker.svg" alt="">
+          </div>
+        </div>
+        <div class="hero_container main_container" id="first">
+          <img src="/images/image-hero-desktop.png" alt="" class="hero">
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Say Varady</a>.
+  </div> -->
+</body>
+<script src="app.js"></script>
+
+</html>
